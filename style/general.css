@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    background-color: #DDDDDD;
+}
+
+p{
+    margin: 0;
+    font-family: Poppins, Montserrat;
+}
+
+.horizontal-line{
+    margin: 0;
+    margin-top: 5px;
+    padding-top: 2px;
+    background-color: #F25287;
+    border-style: solid;
+    border-color: #F25287;
+}

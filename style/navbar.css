@@ -1,0 +1,88 @@
+.navbar{
+    background-color: #F9F3F3;
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+
+.navbar-left-section{
+    width: 200px;
+    margin-top: 7px;
+    /* background-color: lightblue; */
+}
+
+.navbar-right-section{
+    display: flex;
+    width: 650px;
+    /* background-color: lightblue; */
+    justify-content: space-around;
+}
+
+.navbar-center-section{
+    flex: 1;
+    max-width: 600px;
+    /* background-color: lightcoral; */
+    display: flex;
+}
+
+.logo{
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: 700;
+    color: #F25287;
+}
+
+.menu{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 12px;
+    color: #F25287;
+}
+
+.btn{
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 18px;
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.input{
+    width: 500px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-style: solid;
+    border-color: #F25287;
+    border-radius: 20px;
+}
+
+.input:active{
+    border-color: #F25287;
+}
+
+.btn-login{
+    background-color: #F25287;
+    color: #F7D9D9;
+}
+
+.btn-signup{
+    background-color: #F7D9D9;
+    color: #F25287;
+}
+
+.search{
+    background-color: #F7D9D9;
+    border-style: none;
+    margin-left: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+}

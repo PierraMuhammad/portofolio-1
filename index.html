@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cinema XII</title>
+    <!-- Fontawosome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS style -->
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/general.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .jumbotron{
+          display: flex;  
+        }
+
+        .jumbotron-left-section{
+            margin-top: 25px;
+            margin-left: 195px;
+            background-color: #F9F3F3;
+            height: 500px;
+            width: 1000px;
+            border-radius: 12px;
+        }
+
+        .upside{
+            background-color: #F9F3F3;
+            height: 240px;
+            width: 300px;
+            margin-top: 25px;
+            margin-left: 25px;
+            border-radius: 12px;
+        }
+
+        .downside{
+            background-color: #F9F3F3;
+            height: 240px;
+            width: 300px;
+            margin-top: 20px;
+            margin-left: 25px;
+            border-radius: 12px;
+        }
+
+        .container{
+            background-color: #F9F3F3;
+            height: 560px;
+            width: 1325px;
+            margin-top: 25px;
+            margin-left: 195px;
+            border-radius: 12px;
+        }
+
+        .subtitle{
+            padding-top: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+        }
+
+        .subtitle-movie{
+            padding-left: 6px;
+            color: #F25287;
+        }
+
+        .footer{
+            margin-top: 50px;
+            padding-left: 12px;
+            padding-top: 12px;
+            height: 50px;
+            background-color: #F7D9D9;
+        }
+
+        .movie-card{
+            display: flex;
+        }
+
+        .poster{
+            height: 300px;
+            width: 200px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 12px;
+        }
+        
+        .card{
+            border-radius: 12px;
+            box-shadow: 0 0 3px #F25287;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 18px; 
+        }
+
+        .movie-title{
+            padding-top: 5px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: #F25287;
+        }
+
+        .btn-click-here{
+            padding-top: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 8px;
+            margin-left: 65px;
+            margin-right: 65px;
+            margin-bottom: 20px;
+            background-color: #F25287;
+            color: #F7D9D9;
+            font-size: 16px;
+            transition: background-color 0.15s, color 0.15s;
+        }
+
+        .btn-click-here:hover{
+            background-color: #F7D9D9;
+            color: #F25287;
+        }
+
+        .btn-more{
+            border-style: solid;
+            border-color: #F25287;
+            color:#F25287;
+            margin-top: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            transition: background-color 0.15s, color 0.15s;
+        }
+
+        .btn-more:hover{
+            background-color: #F25287;
+            color: white;
+        }
+
+        .btn-box{
+            display: flex;
+            justify-content: center;
+        }
+
+        .jumbotron-image{
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 480px;
+            width: 980px;
+        }
+
+        .list{
+            display: flex;
+            justify-content: space-around;
+            color: #F25287;
+            margin-top: 12px;
+        }
+        
+        .horizontal-list{
+            padding-top: 1px;
+        }
+
+        .dish-list{
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 12px;
+        }
+        
+        .list-box{
+            border-width: thin;
+            border-radius: 12px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            box-shadow: 0 0 3px #F25287;
+            /* margin-left: 20px; */
+            /* margin-right: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <!-- awal navbar -->
+    <div class="navbar">
+        <div class="logo navbar-left-section">
+            <p>My Cinema XII</p>
+        </div>
+        <div class="search-bar navbar-center-section">
+            <input type="text" placeholder="search" class="input">
+            <button class="search"><img class="icon" src="https://img.icons8.com/ios-glyphs/18/F25287/search--v1.png"/></button>
+        </div>
+        <div class="navbar-right-section">
+            <p class="menu">Home</p>
+            <p class="menu">Movie</p>
+            <p class="menu">Teather</p>
+            <p class="menu">Snack & Beverage</p>
+            <p class="menu">Contact us</p>
+            <button class="btn btn-login">Log in</button>
+            <button class="btn btn-signup">Sign up</button>
+        </div>
+    </div>
+    <!-- akhir navbar -->
+
+    <!-- awal jumbotron -->
+    <div class="jumbotron">
+        <div class="jumbotron-left-section">
+            <img src="./img/property/Frame 1.png" alt="" class="jumbotron-image">
+        </div>
+        <div class="jumbotron-right-section">
+            <div class="upside"></div>
+            <div class="downside"></div>
+        </div>
+    </div>
+    <!-- akhir jumbotron -->
+
+    <!-- slide movie yang lagi tayang -->
+    <div class="container">
+        <div class="subtitle">
+            <p class="subtitle-movie">Now Playing</p>
+            <hr class="horizontal-line">
+        </div>
+        <div class="movie-container">
+            <div class="movie-card">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/Cek Toko Sebelah.jpg" alt="Cek Toko Sebelah" class="poster">
+                        <p class="movie-title">Cek Toko Sebelah</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/gatot kaca.jpeg" alt="gatot-kaca" class="poster">
+                        <p class="movie-title">Gatot Kaca</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>   
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/imperfect.jpg" alt="imperfect" class="poster">
+                        <p class="movie-title">imperfect</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>   
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/mencuri raden saleh.jpg" alt="merebut raden saleh" class="poster"> 
+                        <p class="movie-title">Mencuri Raden Saleh</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>  
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/Shang-chi.jpg" alt="" class="poster">
+                        <p class="movie-title">Shang-chi</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>  
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button class="btn btn-more">More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="subtitle">
+            <p class="subtitle-movie">Snack & Beverage</p>
+            <hr class="horizontal-line">
+        </div>
+        <div class="dish-list">
+            <div class="list">
+                <div class="dish-title">
+                    <p>Name</p>
+                </div>
+                <div class="dish-describe">
+                    <p>Describe</p>
+                </div>
+                <div class="price">
+                    <p>Price</p>
+                </div>
+                <div></div>
+            </div>
+            <hr class="horizontal-line horizontal-list">
+            <div class="list list-box">
+                <div class="dish-title">
+                    <p>Name</p>
+                </div>
+                <div class="dish-describe">
+                    <p>Describe</p>
+                </div>
+                <div class="price">
+                    <p>Price</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Pierra Muhammad Shobr</p>
+    </div>
+</body>
+</html>
