@@ -4,13 +4,13 @@
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 12px;
-    padding-right: 50px;
+    padding-right: 12px;
     justify-content: space-between;
 }
 
 .navbar-left-section{
     width: 200px;
-    margin-top: 7px;
+    margin-top: 2px;
     /* background-color: lightblue; */
 }
 
@@ -26,6 +26,7 @@
     max-width: 600px;
     /* background-color: lightcoral; */
     display: flex;
+    justify-content: center;
 }
 
 .logo{
@@ -38,7 +39,7 @@
 .menu{
     margin-left: 8px;
     margin-right: 8px;
-    margin-top: 12px;
+    margin-top: 8px;
     color: #F25287;
 }
 
@@ -46,7 +47,7 @@
     padding-left: 12px;
     padding-right: 12px;
     margin-left: 6px;
-    margin-right: 6px;
+    /* margin-right: 6px; */
     border-radius: 18px;
     border-style: none;
     font-size: 14px;
@@ -54,18 +55,14 @@
 }
 
 .input{
-    width: 500px;
-    font-size: 18px;
+    width: 400px;
+    font-size: 14px;
     padding-left: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     border-style: solid;
     border-color: #F25287;
     border-radius: 20px;
-}
-
-.input:active{
-    border-color: #F25287;
 }
 
 .btn-login{

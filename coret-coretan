@@ -1,0 +1,69 @@
+<div class="dish-list">
+            <div class="list">
+                <div class="dish-title">
+                    <p>Name</p>
+                </div>
+                <div class="dish-describe">
+                    <p>Describe</p>
+                </div>
+                <div class="price">
+                    <p>Price</p>
+                </div>
+                <div></div>
+            </div>
+            <hr class="horizontal-line horizontal-list">
+            <div class="list-box">
+                <div class="dish-title">
+                    <p>Combo Single</p>
+                </div>
+                <div class="dish-describe">
+                    <p>Popcorn S and 1 Coke 500mL</p>
+                </div>
+                <div class="price">
+                    <p>Rp35000</p>
+                </div>
+                <div></div>
+            </div>
+            <table class="list list-box">
+                <tr class="list list-box">
+                    <td class="dish-title">
+                        <p>Combo Single</p>
+                    </td>
+                    <td class="dish-describe">
+                        <p>Popcorn S and 1 Coke 500mL</p>
+                    </td>
+                    <td class="price">
+                        <p>Rp35000</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        .list{
+            display: flex;
+            justify-content: space-around;
+            color: #F25287;
+            margin-top: 12px;
+        }
+        
+        .horizontal-list{
+            padding-top: 1px;
+        }
+
+        .dish-list{
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 12px;
+        }
+        
+        .list-box{
+            display: flex;
+            justify-content: space-between;
+            border-width: thin;
+            border-radius: 12px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            box-shadow: 0 0 3px #F25287;
+        }

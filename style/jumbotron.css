@@ -1,0 +1,41 @@
+.jumbotron{
+    display: flex;  
+  }
+
+  .jumbotron-left-section{
+      margin-top: 25px;
+      margin-left: 100px;
+      background-color: #F9F3F3;
+      height: 500px;
+      width: 1000px;
+      border-radius: 12px;
+  }
+
+  .upside{
+      background-color: #F9F3F3;
+      height: 240px;
+      width: 300px;
+      margin-top: 25px;
+      margin-left: 25px;
+      margin-right: 90px;
+      border-radius: 12px;
+  }
+
+  .downside{
+      background-color: #F9F3F3;
+      height: 240px;
+      width: 300px;
+      margin-top: 20px;
+      margin-left: 25px;
+      border-radius: 12px;
+      margin-right: 90px;
+  }
+  
+  .jumbotron-image{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 470px;
+    width: 970px;
+}

@@ -10,67 +10,14 @@
     <!-- CSS style -->
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/general.css">
+    <link rel="stylesheet" href="./style/jumbotron.css">
+    <link rel="stylesheet" href="./style/movie_show.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <style>
-        .jumbotron{
-          display: flex;  
-        }
-
-        .jumbotron-left-section{
-            margin-top: 25px;
-            margin-left: 100px;
-            background-color: #F9F3F3;
-            height: 500px;
-            width: 1000px;
-            border-radius: 12px;
-        }
-
-        .upside{
-            background-color: #F9F3F3;
-            height: 240px;
-            width: 300px;
-            margin-top: 25px;
-            margin-left: 25px;
-            margin-right: 100px;
-            border-radius: 12px;
-        }
-
-        .downside{
-            background-color: #F9F3F3;
-            height: 240px;
-            width: 300px;
-            margin-top: 20px;
-            margin-left: 25px;
-            border-radius: 12px;
-            margin-right: 100px;
-        }
-
-        .container{
-            background-color: #F9F3F3;
-            height: 560px;
-            width: 1325px;
-            margin-top: 25px;
-            margin-left: 100px;
-            margin-right: 100px;
-            border-radius: 12px;
-        }
-
-        .subtitle{
-            padding-top: 16px;
-            padding-left: 20px;
-            padding-right: 20px;
-            font-size: 20px;
-        }
-
-        .subtitle-movie{
-            padding-left: 6px;
-            color: #F25287;
-        }
-
         .footer{
             margin-top: 50px;
             padding-left: 12px;
@@ -79,109 +26,71 @@
             background-color: #F7D9D9;
         }
 
-        .movie-card{
-            display: flex;
+        .table{
+            display: block;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 5px;
+            height: 500px;
         }
 
-        .poster{
-            height: 300px;
-            width: 200px;
-            margin-left: 15px;
-            margin-right: 15px;
-            margin-top: 12px;
-        }
-        
-        .card{
-            border-radius: 12px;
-            box-shadow: 0 0 3px #F25287;
-            margin-left: 15px;
-            margin-right: 15px;
-            margin-top: 18px; 
-        }
-
-        .movie-title{
-            padding-top: 5px;
-            padding-bottom: 10px;
-            text-align: center;
-            color: #F25287;
-        }
-
-        .btn-click-here{
-            padding-top: 8px;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 8px;
-            margin-left: 65px;
-            margin-right: 65px;
-            margin-bottom: 20px;
-            background-color: #F25287;
-            color: #F7D9D9;
-            font-size: 16px;
-            transition: background-color 0.15s, color 0.15s;
-        }
-
-        .btn-click-here:hover{
-            background-color: #F7D9D9;
-            color: #F25287;
-        }
-
-        .btn-more{
-            border-style: solid;
-            border-color: #F25287;
-            color:#F25287;
-            margin-top: 20px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+        td{
             padding-left: 50px;
-            padding-right: 50px;
-            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .thead{
             font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        tbody{
+            height: 450px;
+        }
+
+        .col{
+            color:#F25287;
+        }
+
+        .row{
+            border-radius: 20px;
+            box-shadow: 0 0 3px #F25287;
+        }
+
+        .col-1{
+            width: 250px;
+        }
+
+        .col-2{
+            width: 320px;
+        }
+
+        .col-3{
+            width: 320px;
+        }
+        
+        .col-4{
+            width: 100px;
+            text-align:end;
+            padding-right: 50px;
+        }
+
+        .btn-buy-this{
+            background-color:#F7D9D9;
+            color: #F25287;
+            padding-top: 2px;
+            padding-bottom: 2px;
             transition: background-color 0.15s, color 0.15s;
         }
 
-        .btn-more:hover{
-            background-color: #F25287;
-            color: white;
-        }
-
-        .btn-box{
-            display: flex;
-            justify-content: center;
-        }
-
-        .jumbotron-image{
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            height: 470px;
-            width: 980px;
-        }
-
-        .list{
-            display: flex;
-            justify-content: space-around;
-            color: #F25287;
-            margin-top: 12px;
-        }
-        
-        .horizontal-list{
-            padding-top: 1px;
-        }
-
-        .dish-list{
-            margin-left: 50px;
-            margin-right: 50px;
-            padding-top: 12px;
-        }
-        
-        .list-box{
+        .btn-buy-this:hover{
+            background-color: white;
+            color:#F25287;
+            border-style: solid;
             border-width: thin;
-            border-radius: 12px;
-            padding-top: 6px;
-            padding-bottom: 6px;
-            box-shadow: 0 0 3px #F25287;
-            /* margin-left: 20px; */
-            /* margin-right: 20px; */
+            border-color: #F25287;
+            padding-top: 2px;
+            padding-bottom: 2px;
         }
     </style>
 </head>
@@ -278,33 +187,189 @@
             <p class="subtitle-movie">Snack & Beverage</p>
             <hr class="horizontal-line">
         </div>
-        <div class="dish-list">
-            <div class="list">
-                <div class="dish-title">
-                    <p>Name</p>
-                </div>
-                <div class="dish-describe">
-                    <p>Describe</p>
-                </div>
-                <div class="price">
-                    <p>Price</p>
-                </div>
-                <div></div>
-            </div>
-            <hr class="horizontal-line horizontal-list">
-            <div class="list list-box">
-                <div class="dish-title">
-                    <p>Name</p>
-                </div>
-                <div class="dish-describe">
-                    <p>Describe</p>
-                </div>
-                <div class="price">
-                    <p>Price</p>
-                </div>
-                <div></div>
-            </div>
-        </div>
+        <table class="table">
+            <thead>
+                <tr class="thead">
+                    <td class="col col-1">
+                        <p>Name</p>
+                    </td>
+                    <td class="col col-2">
+                        <p>Describe</p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Price</p>
+                    </td>
+                    <td class="col col-4">
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Combo Single</p>
+                    </td>
+                    <td class="col col-2">
+                        <p>Popcorn S and 1 Coke 500mL</p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp35000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Combo Duo</p>
+                    </td>
+                    <td class="col col-2">
+                        <p>Popcorn M and 2 Coke 500mL</p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp65000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Combo Complete</p>
+                    </td>
+                    <td class="col col-2">
+                        <p>Popcorn L and 1 Coke 1L</p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp75000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Caramel Popcorn (S/M/L)</p>
+                    </td>
+                    <td class="col col-2">
+                        <p>Popcorn with caramel syrup</p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp25000/Rp45000/Rp60000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Salt Popcorn (S/M/L)</p>
+                    </td>
+                    <td class="col col-2">
+                        <p>Popcorn with salty taste </p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp20000/Rp40000/Rp50000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Sausage Package(S/M/L)</p>
+                    </td>
+                    <td class="col col-2">
+                        <p>Sausage (1pcs/2pcs/3pcs)</p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp20000/Rp40000/Rp50000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Special Platter</p>
+                    </td>
+                    <td class="col col-2">
+                        <p>Sausage, Siomay, Fries</p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp45000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Sprite (500mL/1L)</p>
+                    </td>
+                    <td class="col col-2">
+                        <p></p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp15000/Rp25000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Coca-Cola (500mL/1L)</p>
+                    </td>
+                    <td class="col col-2">
+                        <p></p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp15000/Rp25000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Fanta (500mL/1L)</p>
+                    </td>
+                    <td class="col col-2">
+                        <p></p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp15000/Rp25000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button class="btn btn-buy-this">Buy This</button>
+                    </td>
+                </tr>
+
+                <!-- <tr class="row space-1">
+                    <td class="col col-1">
+                        <p>Fresh Tea (500mL/1L)</p>
+                    </td>
+                    <td class="col col-2">
+                        <p></p>
+                    </td>
+                    <td class="col col-3">
+                        <p>Rp15000/Rp25000</p>
+                    </td>
+                    <td class="col col-4">
+                        <button>Buy This</button>
+                    </td>
+                </tr> -->
+                
+            </tbody>
+        </table>
     </div>
 
     <div class="footer">
