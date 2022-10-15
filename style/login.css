@@ -1,0 +1,73 @@
+.login-box{
+    margin-top: 100px;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color:#F9F3F3;
+    width: 20%;
+    height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 0 0.5px;
+    font-size: 14px;
+    color:#F25287;
+}
+
+.title-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.login-input{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+input{
+    width: 240px;
+    height: 28px;
+    padding-left: 12px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #F25287;;
+}
+
+.btn-log-in{
+    background-color: #F25287;
+    color: #F9F3F3;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-style: solid;
+    border-color: #F25287;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-log-in:hover, .btn-sign-up:hover{
+    background-color: #F9F3F3;
+    color: #F25287;
+}
+
+.btn-sign-up{
+    background-color: #F25287;
+    color: #F9F3F3;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-style: solid;
+    border-color: #F25287;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 24px;
+    padding-left: 24px;
+}

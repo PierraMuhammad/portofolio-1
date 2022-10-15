@@ -18,20 +18,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <style>
-        .footer{
-            margin-top: 50px;
-            padding-left: 12px;
-            padding-top: 12px;
-            height: 50px;
-            background-color: #F7D9D9;
-        }
-
         .table{
             display: block;
             margin-left: 25px;
             margin-right: 25px;
             margin-top: 5px;
             height: 500px;
+            /* border-spacing: 0 1px;
+            border-collapse: separate; */
         }
 
         td{
@@ -45,7 +39,7 @@
         }
 
         tbody{
-            height: 450px;
+            height: 400px;
         }
 
         .col{
@@ -54,7 +48,7 @@
 
         .row{
             border-radius: 20px;
-            box-shadow: 0 0 3px #F25287;
+            box-shadow: 0 0 2px #F25287;
         }
 
         .col-1{
@@ -92,26 +86,38 @@
             padding-top: 2px;
             padding-bottom: 2px;
         }
+
+        .spacer{
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .img-sd{
+            width: 280px; 
+            height:220px; 
+            /* border-radius:12px; */
+            margin-top: 10px;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <!-- awal navbar -->
     <div class="navbar">
         <div class="logo navbar-left-section">
-            <p>My Cinema XII</p>
+            <a href="./index.html" class="logo-link"><p>My Cinema XII</p></a>
         </div>
         <div class="search-bar navbar-center-section">
             <input type="text" placeholder="search" class="input">
             <button class="search"><img class="icon" src="https://img.icons8.com/ios-glyphs/18/F25287/search--v1.png"/></button>
         </div>
         <div class="navbar-right-section">
-            <p class="menu">Home</p>
-            <p class="menu">Movie</p>
-            <p class="menu">Teather</p>
-            <p class="menu">Snack & Beverage</p>
-            <p class="menu">Contact us</p>
-            <button class="btn btn-login">Log in</button>
-            <button class="btn btn-signup">Sign up</button>
+            <a href="#movie-slide"><p class="menu">Now Playing</p></a>
+            <a href="#upcoming-slide"><p class="menu">Up Coming</p></a>
+            <p class="menu">Theater</p>
+            <a href="#snake-beverage"><p class="menu">Snack & Beverage</p></a>
+            <a href="./login.html" class="btn-2"><button class="btn-login">Log in</button></a>
+            <a href="" class="btn-2"><button class="btn-signup">Sign up</button></a>
         </div>
     </div>
     <!-- akhir navbar -->
@@ -119,17 +125,21 @@
     <!-- awal jumbotron -->
     <div class="jumbotron">
         <div class="jumbotron-left-section">
-            <img src="./img/property/Frame 1.png" alt="" class="jumbotron-image">
+            <a href="./login.html">
+                <img src="./img/property/Frame 1.png" alt="" class="jumbotron-image">
+            </a>
         </div>
         <div class="jumbotron-right-section">
-            <div class="upside"></div>
+            <div class="upside">
+                <img src="./img/property/Snack & Drink.png" alt="" class="img-sd">
+            </div>
             <div class="downside"></div>
         </div>
     </div>
     <!-- akhir jumbotron -->
 
     <!-- slide movie yang lagi tayang -->
-    <div class="container">
+    <div class="container" id="movie-slide">
         <div class="subtitle">
             <p class="subtitle-movie">Now Playing</p>
             <hr class="horizontal-line">
@@ -176,13 +186,109 @@
                     </div>
                 </div>
             </div>
+            <div class="movie-card">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/Cek Toko Sebelah.jpg" alt="Cek Toko Sebelah" class="poster">
+                        <p class="movie-title">Cek Toko Sebelah</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/gatot kaca.jpeg" alt="gatot-kaca" class="poster">
+                        <p class="movie-title">Gatot Kaca</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>   
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/imperfect.jpg" alt="imperfect" class="poster">
+                        <p class="movie-title">imperfect</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>   
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/mencuri raden saleh.jpg" alt="merebut raden saleh" class="poster"> 
+                        <p class="movie-title">Mencuri Raden Saleh</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>  
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/Shang-chi.jpg" alt="" class="poster">
+                        <p class="movie-title">Shang-chi</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>  
+                    </div>
+                </div>
+            </div>
             <div class="btn-box">
-                <button class="btn btn-more">More</button>
+                <button class="btn-2 btn-more">More</button>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <!-- slide movie upcoming -->
+    <div class="container" id="upcoming-slide">
+        <div class="subtitle">
+            <p class="subtitle-movie">Up Coming</p>
+            <hr class="horizontal-line">
+        </div>
+        <div class="movie-container">
+            <div class="movie-card">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/Cek Toko Sebelah.jpg" alt="Cek Toko Sebelah" class="poster">
+                        <p class="movie-title">Cek Toko Sebelah</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/gatot kaca.jpeg" alt="gatot-kaca" class="poster">
+                        <p class="movie-title">Gatot Kaca</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>   
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/imperfect.jpg" alt="imperfect" class="poster">
+                        <p class="movie-title">imperfect</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>   
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/mencuri raden saleh.jpg" alt="merebut raden saleh" class="poster"> 
+                        <p class="movie-title">Mencuri Raden Saleh</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>  
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <img src="./img/poster/Shang-chi.jpg" alt="" class="poster">
+                        <p class="movie-title">Shang-chi</p>
+                        <button class="btn btn-click-here">Buy Ticket</button>  
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button class="btn-2 btn-more">More</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- list makanan&minuman -->
+    <div class="container" id="snake-beverage">
         <div class="subtitle">
             <p class="subtitle-movie">Snack & Beverage</p>
             <hr class="horizontal-line">
@@ -204,153 +310,149 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Combo Single</p>
-                    </td>
-                    <td class="col col-2">
-                        <p>Popcorn S and 1 Coke 500mL</p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp35000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Combo Duo</p>
+                        </td>
+                        <td class="col col-2">
+                            <p>Popcorn M and 2 Coke 500mL</p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp65000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Combo Duo</p>
-                    </td>
-                    <td class="col col-2">
-                        <p>Popcorn M and 2 Coke 500mL</p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp65000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Combo Complete</p>
+                        </td>
+                        <td class="col col-2">
+                            <p>Popcorn L and 1 Coke 1L</p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp75000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
-
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Combo Complete</p>
-                    </td>
-                    <td class="col col-2">
-                        <p>Popcorn L and 1 Coke 1L</p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp75000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Caramel Popcorn (S/M/L)</p>
+                        </td>
+                        <td class="col col-2">
+                            <p>Popcorn with caramel syrup</p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp25000/Rp45000/Rp60000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
-
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Caramel Popcorn (S/M/L)</p>
-                    </td>
-                    <td class="col col-2">
-                        <p>Popcorn with caramel syrup</p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp25000/Rp45000/Rp60000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Salt Popcorn (S/M/L)</p>
+                        </td>
+                        <td class="col col-2">
+                            <p>Popcorn with salty taste </p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp20000/Rp40000/Rp50000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
-
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Salt Popcorn (S/M/L)</p>
-                    </td>
-                    <td class="col col-2">
-                        <p>Popcorn with salty taste </p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp20000/Rp40000/Rp50000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Sausage Package(S/M/L)</p>
+                        </td>
+                        <td class="col col-2">
+                            <p>Sausage (1pcs/2pcs/3pcs)</p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp20000/Rp40000/Rp50000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
-
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Sausage Package(S/M/L)</p>
-                    </td>
-                    <td class="col col-2">
-                        <p>Sausage (1pcs/2pcs/3pcs)</p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp20000/Rp40000/Rp50000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Special Platter</p>
+                        </td>
+                        <td class="col col-2">
+                            <p>Sausage, Siomay, Fries</p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp45000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
-
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Special Platter</p>
-                    </td>
-                    <td class="col col-2">
-                        <p>Sausage, Siomay, Fries</p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp45000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Sprite (500mL/1L)</p>
+                        </td>
+                        <td class="col col-2">
+                            <p></p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp15000/Rp25000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
-
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Sprite (500mL/1L)</p>
-                    </td>
-                    <td class="col col-2">
-                        <p></p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp15000/Rp25000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Coca-Cola (500mL/1L)</p>
+                        </td>
+                        <td class="col col-2">
+                            <p></p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp15000/Rp25000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
-
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Coca-Cola (500mL/1L)</p>
-                    </td>
-                    <td class="col col-2">
-                        <p></p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp15000/Rp25000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
-                </tr>
-
-                <tr class="row space-1">
-                    <td class="col col-1">
-                        <p>Fanta (500mL/1L)</p>
-                    </td>
-                    <td class="col col-2">
-                        <p></p>
-                    </td>
-                    <td class="col col-3">
-                        <p>Rp15000/Rp25000</p>
-                    </td>
-                    <td class="col col-4">
-                        <button class="btn btn-buy-this">Buy This</button>
-                    </td>
+                <tr class="spacer">
+                    <tr class="row space-1">
+                        <td class="col col-1">
+                            <p>Fanta (500mL/1L)</p>
+                        </td>
+                        <td class="col col-2">
+                            <p></p>
+                        </td>
+                        <td class="col col-3">
+                            <p>Rp15000/Rp25000</p>
+                        </td>
+                        <td class="col col-4">
+                            <button class="btn btn-buy-this">Buy This</button>
+                        </td>
+                    </tr>
                 </tr>
 
                 <!-- <tr class="row space-1">

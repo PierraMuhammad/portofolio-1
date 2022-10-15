@@ -10,9 +10,44 @@ p{
 
 .horizontal-line{
     margin: 0;
-    margin-top: 5px;
-    padding-top: 2px;
+    margin-top: 10px;
+    padding-top: 0.1px;
+    margin-left: 10px;
+    margin-right: 15px;
     background-color: #F25287;
     border-style: solid;
     border-color: #F25287;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.footer{
+    margin-top: 50px;
+    padding-left: 12px;
+    padding-top: 12px;
+    height: 100px;
+    background-color: #F7D9D9;
+}
+
+.btn{
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 6px;
+    border-radius: 18px;
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-2{
+    border-radius: 18px;
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
 }
